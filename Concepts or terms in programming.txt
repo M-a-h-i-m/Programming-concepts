@@ -1,0 +1,94 @@
+Programming Language
+------------------------------------
+Programming Language means the language that we use to talk with Computers
+
+
+Low-Level Language
+------------------------------
+These are the languages that are very close to the computer’s hardware. They are fast and efficient but harder for humans to read and write. 
+
+
+Machine Language 
+----------------------------
+Machine language originated in the 1940s, consisting of a series of 0s and 1s. It means that Machine language is the language that is easily understood by computers, but hard for humans to understand. It's fast cause it is close to the hardware. and it's not portable.
+Example: 10110010 11001011
+
+
+Assembly Language
+------------------------------
+ Slightly easier than machine language because it uses mnemonics (short words) instead of pure binary.
+ Example: MOV AX, 1 (moves value 1 into register AX)
+
+
+High-Level Languages
+---------------------------------
+These languages are closer to human language, making them easier to read, write, and maintain.
+
+
+Middle-Level Languages
+------------------------------------
+These are a mix of low-level and high-level languages. 
+Example: C
+
+
+
+Difference
+------------------
+
+________________________________________________________________________________
+|     Level		|     Close to				| Human readability 	|    Speed       |          Example              |
+|__________	|____________________________________________________________________ |
+| Low-level	| Hardware				| Hard				| Very fast	| Machine, Assembly	|
+| Middle-level	| Hardware & High-level		| Medium				| Fast		|   C                		    	|
+| High-level     | Humans					| Easy				| Slower		| Python, Java, C++	|
+|_______________________________________________________________________________ |
+
+
+
+
+Static Language
+-------------------------
+
+
+
+Dynamic Language
+----------------------------
+
+
+
+Flow-chart
+--------------------
+A flowchart is a visual diagram that shows the steps in a process using symbols and arrows. It’s a simple way to make complicated tasks easier to understand.
+
+🧿What a flowchart includes
+		⬇️			     
+➡️ Oval → Start or end
+➡️Rectangle → Action or task
+➡️Diamond → Decision (yes/no or true/false)
+➡️Arrows → Show the order of steps
+
+🧿What flowcharts are used for
+
+➡️Explaining how a system or program works
+➡️Planning computer algorithms
+➡️Showing business or work processes
+➡️Troubleshooting or decision-making guides
+
+Example (simple):
+
+   [Start]
+      |
+      v
+ [Get ingredients]
+      |
+      v
+ [Cook food]
+      |
+      v
+    [Eat]
+      |
+      v
+    [End]
+
+
+

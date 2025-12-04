@@ -1,0 +1,7 @@
+Programming languages can be categorized in several ways based on their--
+
+01. level
+02. paradigm
+03. purpose
+
+
