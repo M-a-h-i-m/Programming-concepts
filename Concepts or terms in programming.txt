@@ -92,3 +92,25 @@ Example (simple):
 
 
 
+Pseudocode
+----------------
+
+Pseudocode is a simple, plain-language way of writing the steps of a program or algorithm without using real programming syntax.
+
+It looks like code, but it’s not tied to any specific programming language—its purpose is to explain the logic clearly.
+
+✅ Why pseudocode is useful
+
+♦️Helps plan a program before writing real code
+♦️Easy to read and understand
+♦️Focuses on logic, not syntax
+♦️Useful for communicating ideas between people who know different programming languages
+
+🧠 What pseudocode looks like
+
+START
+  INPUT number1
+  INPUT number2
+  total ← number1 + number2
+  OUTPUT total
+END
