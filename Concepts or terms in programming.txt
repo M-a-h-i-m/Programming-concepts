@@ -46,32 +46,103 @@ ________________________________________________________________________________
 
 Variable
 ---------
+A variable is a named storage location in a program that holds data. Its value can change during program execution, allowing the program to store, update, and use information when needed.
+
+Example:
+jilan = 10 //Here Jilan is a variable and it contains the value 10
+
+
 String
 ----------
+A string is a data type used to store sequences of characters. It represents text such as letters, words, or symbols and is treated as a single piece of data by the program.
+
+Example:
+String = "Mahim"  //Here 'Mahim' is character with a few character
+
+
 Data Type
 ----------
+A data type defines the kind of data a variable can store and determines how the computer will interpret and handle that data. It sets rules for the size, format, and type of operations allowed on the stored value.
+
+Example:
+integer   = 12
+float     = 12.5
+String    = "Mahim"
+Character = 'c'
+Boolean   = True/False
+
+
 Conditional Statement
 --------------------------
+A conditional statement allows a program to make decisions by checking whether a condition is true or false. Based on the result, the program chooses a specific path or action to execute.
+
+Example:
+
+if(condition):
+  statement
+elif(condition):
+  statement
+else:
+  statement
+
+
 Loop
 -------
+A loop is a control structure that repeatedly executes a block of code as long as a certain condition is met. It helps automate repetitive tasks and reduces code duplication.
+
+Example:
+ 
+ for i in range(start,step,stop):
+  statement
+
+
 Function
 ----------
+A function is a self-contained block of code designed to perform a specific operation. It improves code organization, reduces repetition, and allows tasks to be reused throughout a program.
+
+Example:
+
+ def FunctionName(parameter1,parameter2):
+    statememt
+  return answer
+
+
 Array
 ----------
+An array is a structured collection of multiple values stored under a single name, where each value is kept at a specific position (index). It helps manage lists of related data efficiently.
+
+Exaple:
+
+ArrayName = [1,2,3,6]
+
+
 2d Array
 ------------
+A 2D array is an array made up of other arrays, arranged in rows and columns. It is used to represent data in a grid-like structure and is useful for storing tabular or matrix-based data.
+
+Exaple:
+
+ArrayName = [
+  [1,2,3,6],
+  [3,6,5,8,9,6,3,5],
+  [7,8,9,6,5,47,8,3,6,9,5]
+]
+
+
 
 Static Language
 -------------------------
-
+A static language is one where data types are fixed and checked before the program runs. This leads to early detection of type errors, stronger structure, and often better performance.
 
 
 Dynamic Language
 ----------------------------
+A dynamic language checks and assigns data types while the program is running. It allows greater flexibility, easier coding, and faster development but may catch type errors later.
+
 
 Debugging
 -----------
-
+Debugging is the process of identifying, analyzing, and fixing errors or unexpected behavior in a program. It ensures the code runs correctly and helps improve program reliability and performance.
 
 
 Flow-chart
@@ -153,6 +224,62 @@ Steps:
 ♦️Check 2 → ✔ found!
 
 
+Binary Search
+----------------
+
+Binary Search is a fast searching algorithm used to find an element in a sorted array.
+
+⭐ Simple Definition
+Binary Search divides the search space in half every time until the target is found.
+
+🔥 Key Points
+
+♦️ Works only on sorted data (ascending or descending).
+♦️ Much faster than linear search.
+♦️ Time complexity: O(log n)
+
+
+📘 How it Works (easy explanation)
+  Suppose you want to find a number in a sorted list:
+♦️ Check the middle element.
+♦️ If it’s equal → Found 🎯
+♦️ If the target is smaller, search the left half.
+♦️ If the target is bigger, search the right half.
+♦️ Repeat until found or nothing left.
+
+📊 Example
+
+Array:
+[2, 5, 7, 12, 18, 20]
+Find 12:
+
+♦️ Middle → 7 → 12 is bigger → go right
+♦️ New middle → 18 → 12 is smaller → go left
+♦️ New middle → 12 → Found
+
 
 Time and Space Complexity
 ------------------------------
+
+Time and Space Complexity describe how efficient an algorithm is.
+These two ideas help you understand how much time and memory your code needs when input size increases.
+
+⏱️ 1. Time Complexity (How fast your algorithm runs)
+
+Time Complexity tells you how the running time changes as the size of input (n) grows.
+
+⭐ Common Time Complexities
+
+♦️O(1) → Constant time (super fast)
+    Example: accessing an array element
+♦️O(n) → Linear time
+    Example: looping once over an array
+♦️O(n²) → Quadratic time
+    Example: nested loops
+♦️O(log n) → Logarithmic time
+    Example: binary search
+♦️O(n log n) → Good for sorting algorithms
+    Example: merge sort, quicksort (average)
+
+✨ Purpose:
+To compare algorithms without running them.
