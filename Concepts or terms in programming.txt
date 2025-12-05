@@ -251,6 +251,17 @@ Binary Search divides the search space in half every time until the target is fo
 ♦️ If the target is bigger, search the right half.
 ♦️ Repeat until found or nothing left.
 
+
+Algorithm:
+♦️ sort the array in accending order
+♦️ find the middle point, mid = (Upper bound + Lower bound)/2
+♦️ if(array[mid] > array[data]):
+      left = mid + 1
+   elif(array[mid] < array[data]):
+      right = mid - 1
+   elif(array[mid] == array[data]):
+      return "mid_found"
+ 
 📊 Example
 
 Array:
