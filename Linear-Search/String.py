@@ -1,5 +1,5 @@
-String = "Linear"
-target = 'i'
+String = "Jilan"
+target = 'n'
 
 def LinearSearch(String,target):
   if(len(String) == 0):
