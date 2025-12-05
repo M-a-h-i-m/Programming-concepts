@@ -134,10 +134,14 @@ Static Language
 -------------------------
 A static language is one where data types are fixed and checked before the program runs. This leads to early detection of type errors, stronger structure, and often better performance.
 
+Example: C,C++,Java,C#,Swift,Go,Rust
+
 
 Dynamic Language
 ----------------------------
 A dynamic language checks and assigns data types while the program is running. It allows greater flexibility, easier coding, and faster development but may catch type errors later.
+
+Example: Python,JavaScript,Ruby,PHP,Perl,Lua,MATLAB
 
 
 Debugging
