@@ -298,3 +298,9 @@ Time Complexity tells you how the running time changes as the size of input (n) 
 
 ✨ Purpose:
 To compare algorithms without running them.
+
+
+
+The ceiling number
+---------------------
+The ceiling of a number is the smallest integer that is greater than or equal to that number
