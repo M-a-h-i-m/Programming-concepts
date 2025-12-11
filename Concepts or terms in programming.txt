@@ -129,6 +129,37 @@ ArrayName = [
 ]
 
 
+Mountain Array
+-------------------
+
+A mountain array is a special type of array (or list) that first strictly increases to a peak element and then strictly decreases after that.
+
+Example:
+
+array = [2,3,6,9,4,2,1]
+
+__visual__:    
+                        9
+                      6   4
+                    3       2
+                  2           1
+
+Dictionary
+----------------
+In Python, a dictionary is a built-in data structure used to store data in key–value pairs.
+It’s similar to a real-life dictionary, where a word (key) maps to its definition (value).
+we can't use dictionary and List to key but can use all of them as a value
+
+Example:
+
+student = {
+    "name": "Mahim",
+    "age": 22,
+    "department": "CSE"
+    "Subject": ["Mechanics","BBA","Law"]
+     12:True
+}
+
 
 Static Language
 -------------------------

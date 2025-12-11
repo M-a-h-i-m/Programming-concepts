@@ -1,7 +1,7 @@
 array = [56, 60, 7, 24, 55, 5, 48, 51, 127, 21, 26, 19, 49, 50, 83, 33, 14, 45, 44, 2]
 array.sort()  
 
-target = 127
+target = 21
 left = 0
 right = len(array) - 1
 
