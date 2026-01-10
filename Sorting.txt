@@ -1,0 +1,122 @@
+
+Bubble sort
+--------------------
+
+Bubble Sort is one of the simplest sorting algorithms in computer science. It works by repeatedly comparing adjacent elements in a list (or array) and swapping them if they are in the wrong order.
+
+This process continues until the list is completely sorted.
+
+🔹 How Bubble Sort Works:
+01. Start at the beginning of the list.
+02. Compare the first two elements.
+03. If the first is greater than the second → swap them.
+04. Move to the next pair and repeat until you reach the end.
+05. After the first pass, the largest element will be at the end of the 
+    list.
+06. Repeat the process for the remaining (unsorted) elements.
+07. Continue until no swaps are needed — the list is now sorted
+
+
+
+🔹 Example:
+
+Suppose we have this list:
+[5, 3, 8, 4, 2]
+
+Pass 1:
+
+01. Compare 5 and 3 → swap → [3, 5, 8, 4, 2]
+02. Compare 5 and 8 → no swap
+03. Compare 8 and 4 → swap → [3, 5, 4, 8, 2]
+04. Compare 8 and 2 → swap → [3, 5, 4, 2, 8]
+→Largest element (8) “bubbles” to the end.3
+
+Pass 2
+[3, 5, 4, 2, 8] → [3, 4, 2, 5, 8] → [3, 2, 4, 5, 8] → [2, 3, 4, 5, 8]
+
+Now the array is sorted.
+
+🔹 Pseudocode:
+for i = 0 to n-1
+    for j = 0 to n-i-2
+        if arr[j] > arr[j+1]
+            swap(arr[j], arr[j+1])
+
+
+🔹 Time Complexity:
+01. Best case: O(n) — when the list is already sorted
+02. Average and Worst case: O(n²) — because of nested loops
+
+
+🔹 Space Complexity:
+O(1) — in-place sorting (no extra memory used)
+
+🔹 Key Idea:
+In Bubble Sort, large values "bubble up" to the end, while smaller values gradually "sink" to the beginning.
+
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Selection Sort
+----------------
+
+🔹 What is Selection Sort?
+
+Selection Sort works by repeatedly selecting the smallest element (for ascending order) from the unsorted part of the array and placing it at the beginning.
+
+It divides the array into two parts:
+
+01. A sorted part (on the left)
+02. An unsorted part (on the right)
+
+
+➡️MY OPINION:
+It's just Assuming the first element as the smallest one and then comparing it with others if something is smaller than that the position will be swapped.
+Then Do it with the rest of the Array.
+
+
+
+🔹 Step-by-Step Process:
+
+Suppose:
+arr = [3, 1, 5, 4, 2]
+
+Pass 1:
+Smallest element in [3, 1, 5, 4, 2] is 1.
+Swap 1 with first element (3).
+→ [1, 3, 5, 4, 2]
+
+
+Pass 2:
+Find smallest in remaining [3, 5, 4, 2] → 2
+Swap 2 with 3
+→ [1, 2, 5, 4, 3]
+
+
+Pass 3:
+Find smallest in [5, 4, 3] → 3
+Swap 3 with 5
+→ [1, 2, 3, 4, 5]
+
+
+Pass 4:
+Find smallest in [4, 5] → already sorted
+
+
+✅ Final sorted array: [1, 2, 3, 4, 5]
+
+
+
+🔹 Pseudocode:
+for i = 0 to n-2:
+    min_index = i
+    for j = i+1 to n-1:
+        if arr[j] < arr[min_index]:
+            min_index = j
+    swap(arr[i], arr[min_index])
+
+

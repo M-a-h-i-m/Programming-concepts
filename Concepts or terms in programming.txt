@@ -336,4 +336,11 @@ To compare algorithms without running them.
 
 The ceiling number
 ---------------------
-The ceiling of a number is the smallest integer that is greater than or equal to that number
+A ceiling number is the smallest integer greater than or equal to a given number, essentially rounding up to the next whole number or multiple
+
+Example: 
+
+a = 12.32
+a = 13 #This is after ceiling
+
+
