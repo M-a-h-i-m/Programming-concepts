@@ -190,6 +190,8 @@ A flowchart is a visual diagram that shows the steps in a process using symbols 
 ➡️Rectangle → Action or task
 ➡️Diamond → Decision (yes/no or true/false)
 ➡️Arrows → Show the order of steps
+➡️Parallelogram → Input/Output
+
 
 🧿What flowcharts are used for
 
