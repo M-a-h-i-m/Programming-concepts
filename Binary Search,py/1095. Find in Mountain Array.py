@@ -33,3 +33,4 @@ class Solution:
 
         return -1
 
+print(Solution().findInMountainArray([24,69,100,99,79,78,67,36,26,19]))
