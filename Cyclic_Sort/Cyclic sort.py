@@ -1,5 +1,6 @@
-arr = [3, 5, 2, 1, 4]
+arr = [3, 2, 1, 4]
 i = 0
+
 while i < len(arr):
   
   if(arr[i] != i+1):
@@ -10,5 +11,5 @@ while i < len(arr):
   else:
      i+=1
     
-
 print(arr)
+
