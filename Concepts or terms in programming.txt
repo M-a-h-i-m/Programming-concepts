@@ -161,6 +161,38 @@ student = {
 }
 
 
+Mutable and Immutable
+--------------------------
+♦️Mutable:
+01. Objects that can be changed after creation.
+02. Modifying them does not create a new object — the original object is updated in place.
+03. Examples: list, dict, set.
+
+Example:-
+
+marks = [80, 90, 58, 70, 60]
+marks.sort()
+print(marks)  // [58, 60, 70, 80, 90]
+
+➡️ The same list marks was changed — no new list was created.
+
+
+♦️Immutable:
+
+01. Objects that cannot be changed once created.
+02. Any “change” creates a new object in memory.
+03. Examples: str, tuple, int, float.
+
+Example:-
+
+name = "Mahim"
+name = name + " Khan"
+print(name)  // Mahim Khan
+
+➡️ A new string "Mahim Khan" was created; the old "Mahim" string was left unchanged.
+
+
+
 Static Language
 -------------------------
 A static language is one where data types are fixed and checked before the program runs. This leads to early detection of type errors, stronger structure, and often better performance.
