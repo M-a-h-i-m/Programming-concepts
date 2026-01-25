@@ -415,3 +415,53 @@ Unstable sort হলে ফলাফল:
 01. একাধিকভাবে sort করতে হয় (যেমন: আগে নাম, পরে বয়স)
 02. সমান মানের উপাদানগুলোর আগের ক্রম ঠিক রাখতে চাও
 
+
+
+
+Recursion
+--------------------
+
+Recursion is a programming technique where a function calls itself to solve a problem.
+
+It works by breaking a big problem into smaller versions of the same problem — until it reaches a point where it no longer needs to call itself. That point is called the base case.
+
+🔁 Example Concept
+
+Think of recursion like looking into two mirrors facing each other — the reflection keeps repeating until it fades away (base case).
+
+🧠 Structure of a Recursive Function
+
+Every recursive function has two key parts:
+01. Base Case → Stops the recursion (prevents infinite loop).
+02. Recursive Case → The function calls itself with a smaller input.
+
+Example:
+
+def factorial(n):
+    if n == 1:       # Base case
+        return 1
+    else:             # Recursive case
+        return n * factorial(n - 1)
+
+
+How it works:
+
+factorial(4)
+→ 4 * factorial(3)
+→ 4 * 3 * factorial(2)
+→ 4 * 3 * 2 * factorial(1)
+→ 4 * 3 * 2 * 1 = 24
+
+
+
+⚙️ Why Use Recursion
+
+➡️Solves problems that are naturally repetitive or hierarchical — like:
+01. Tree/graph traversal
+02. Searching/sorting algorithms (like quicksort, mergesort)
+03. Mathematical sequences (Fibonacci, factorial)
+04. File system exploration
+
+⚠️ Important
+
+Recursion can lead to stack overflow if the base case is missing or wrong, because it keeps calling itself endlessly.
