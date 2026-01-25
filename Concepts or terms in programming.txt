@@ -59,9 +59,11 @@ A string is a data type used to store sequences of characters. It represents tex
 Example:
 String = "Mahim"  //Here 'Mahim' is character with a few character
 
+♦️String Literal: A string literal simply means a fixed piece of text written inside quotes in your code — it’s the literal value of a string, not a variable or expression.
+
 
 Data Type
-----------
+----------------
 A data type defines the kind of data a variable can store and determines how the computer will interpret and handle that data. It sets rules for the size, format, and type of operations allowed on the stored value.
 
 Example:
