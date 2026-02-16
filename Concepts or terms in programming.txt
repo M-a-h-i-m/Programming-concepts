@@ -425,6 +425,14 @@ Recursion is a programming technique where a function calls itself to solve a pr
 
 It works by breaking a big problem into smaller versions of the same problem — until it reaches a point where it no longer needs to call itself. That point is called the base case.
 
+
+🧠 A recursive case is the part of the function that:
+
+01. Calls itself (the same function name appears inside the function).
+02. Reduces the problem (each call works on a smaller or simpler version).
+03. Moves toward the base case (so it eventually stops).
+
+
 🔁 Example Concept
 
 Think of recursion like looking into two mirrors facing each other — the reflection keeps repeating until it fades away (base case).
