@@ -1,0 +1,63 @@
+
+Linear Search
+-----------------
+
+A linear search is the simplest searching method used to find a specific item in a list. It checks each element one by one from the beginning until it finds the target—or reaches the end.
+
+🔍 Example
+
+List: [4, 7, 9, 2, 5]
+Target: 2
+
+Steps:
+
+♦️Check 4 → not 2
+♦️Check 7 → not 2
+♦️Check 9 → not 2
+♦️Check 2 → ✔ found!
+
+
+Binary Search
+----------------
+
+Binary Search is a fast searching algorithm used to find an element in a sorted array.
+
+⭐ Simple Definition
+Binary Search divides the search space in half every time until the target is found.
+
+🔥 Key Points
+
+♦️ Works only on sorted data (ascending or descending).
+♦️ Much faster than linear search.
+♦️ Time complexity: O(log n)
+
+
+📘 How it Works (easy explanation)
+  Suppose you want to find a number in a sorted list:
+♦️ Check the middle element.
+♦️ If it’s equal → Found 🎯
+♦️ If the target is smaller, search the left half.
+♦️ If the target is bigger, search the right half.
+♦️ Repeat until found or nothing left.
+
+
+Algorithm:
+♦️ sort the array in accending order
+♦️ find the middle point, mid = (Upper bound + Lower bound)/2
+♦️ if(array[mid] > array[data]):
+      left = mid + 1
+   elif(array[mid] < array[data]):
+      right = mid - 1
+   elif(array[mid] == array[data]):
+      return "mid_found"
+ 
+📊 Example
+
+Array:
+[2, 5, 7, 12, 18, 20]
+Find 12:
+
+♦️ Middle → 7 → 12 is bigger → go right
+♦️ New middle → 18 → 12 is smaller → go left
+♦️ New middle → 12 → Found
+
