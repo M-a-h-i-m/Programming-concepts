@@ -241,3 +241,143 @@ Start: [3, 1, 5, 4, 2]
 | Find All Missing Numbers  | Find all missing numbers in 1–n       |
 | Find the Duplicate Number | Detect duplicate without extra space  |
 | Set Mismatch              | One number missing and one duplicate  |
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Quick Sort 
+------------------
+
+⚙️ What is Quick Sort?
+Quick Sort is a divide-and-conquer sorting algorithm that works by selecting a pivot element and partitioning the array so that:
+
+01. Elements less than the pivot go to the left
+02. Elements greater than the pivot go to the right
+
+After partitioning, Quick Sort is recursively applied to the left and right subarrays until the entire array is sorted.
+
+🧩Quick Sort is in-place, but not stable.
+Example:
+
+arr = [8, 3, 1, 7, 0, 10, 2] 
+
+Pivot chosen: last element 2
+
+Partition:
+
+♦️ Left: [1, 0]
+♦️ Pivot: 2
+♦️ Right: [8, 3, 7, 10]
+
+Recursively sort left → [0, 1]
+Recursively sort right → [3, 7, 8, 10]
+
+Combine → [0, 1, 2, 3, 7, 8, 10]
+
+🧠 Algorithm Intuition:
+01. Pick a pivot (last element or random).
+02. Partition array into two parts: ≤ pivot, > pivot.
+03. Recursively sort left and right partitions.
+04. Combine the results.
+
+
+💻 Example Step-by-Step
+Start: [8, 3, 1, 7, 0, 10, 2]
+
+♦️ i = pivot = 2
+
+Left: [1,0], Right: [8,3,7,10]
+
+♦️ Sort left [1,0] → [0,1]
+
+♦️ Sort right [8,3,7,10] → [3,7,8,10]
+
+♦️ Combine → [0,1,2,3,7,8,10]
+
+
+
+🚀 Time and Space Complexity
+
+Time:
+01. Best/Average: O(n log n)
+02. Worst: O(n²) (bad pivot selection)
+
+Space:
+01. O(log n) due to recursion stack
+
+Feature	of Quick Sort:
+----------------------------+--------------------------------------------
+|           Features        |       QUick Sort                          |
++---------------------------|-------------------------------------------|
+|  In-place                 |           yes                             |
+|---------------------------|-------------------------------------------|
+|  Stable                   |            No                             |
+|---------------------------|-------------------------------------------|
+|  Best/Average Time        |            O(n log n)                     |
+|---------------------------|-------------------------------------------|
+|  Worst time               |            O(n²)                          |
+|---------------------------|-------------------------------------------|
+|  Space Complexity         |            O(log n)                       |
++---------------------------+-------------------------------------------+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Merge Sort 
+------------------
+⚙️ What is Merge Sort?
+Merge Sort is a divide-and-conquer sorting algorithm that divides the array into two halves, recursively sorts each half, and then merges the two sorted halves into one sorted array.
+
+It is stable, but requires extra space for merging.
+
+
+🧩 Example:
+arr = [8, 3, 1, 7, 0, 10, 2]
+
+01. Divide: [8,3,1,7] & [0,10,2]
+02. Divide again: [8,3] [1,7] & [0,10] [2]
+03. Sort smallest units: [8,3] → [3,8], [1,7] → [1,7], [0,10] → [0,10], [2]
+04. Merge: [3,8] + [1,7] → [1,3,7,8], [0,10] + [2] → [0,2,10]
+05. Merge final: [1,3,7,8] + [0,2,10] → [0,1,2,3,7,8,10]
+
+
+🧠 Algorithm Intuition:
+01. Split array into two halves.
+02. Recursively sort each half.
+03. Merge the two sorted halves together.
+04. Repeat until fully sorted.
+
+
+
+💻 Example Step-by-Step
+Start: [8, 3, 1, 7, 0, 10, 2]
+
+♦️ Divide → [8,3,1,7] & [0,10,2]
+♦️ Divide → [8,3] [1,7] & [0,10] [2]
+♦️ Sort smallest units → [3,8], [1,7], [0,10], [2]
+♦️ Merge → [1,3,7,8], [0,2,10]
+♦️ Merge final → [0,1,2,3,7,8,10]
+
+
+🚀 Time and Space Complexity
+01. Time: O(n log n) (always)
+02. Space: O(n) (extra array needed for merging)
+
+
+Feature	of Merge Sort:
+----------------------------+--------------------------------------------
+|           Features        |       QUick Sort                          |
++---------------------------|-------------------------------------------|
+|  In-place                 |           No                              |
+|---------------------------|-------------------------------------------|
+|  Stable                   |           yes                             |
+|---------------------------|-------------------------------------------|
+|  Best/Average/worst Time  |            O(n log n)                     |
+|---------------------------|-------------------------------------------|
+|  Space Complexity         |            O(n)                           |
++---------------------------+-------------------------------------------+
