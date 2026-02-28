@@ -1,0 +1,44 @@
+
+🔹 What is Insertion Sort?
+
+Insertion Sort is a simple and intuitive sorting algorithm that works the same way you might sort playing cards in your hand.
+
+➡️MY OPINION:
+It's just sorting first two elements on step 1 then first three on step 2 then four,five and so on.
+
+🔹 Step-by-Step Idea
+Suppose you have:
+arr = [3, 1, 5, 4, 2]
+
+We divide the array into two parts:
+
+01. Left part: Sorted portion
+02. Right part: Unsorted portion
+
+Then we move through the array, inserting each element into its correct position in the sorted part.
+
+Step 1:
+Sorted: [3]
+Unsorted: [1, 5, 4, 2]
+→ Insert 1 before 3 → [1, 3, 5, 4, 2]
+
+Step 2:
+Now sorted: [1, 3, 5]
+Next element 4 goes before 5 → [1, 3, 4, 5, 2]
+
+Step 3:
+Next element 2 goes before 3 → [1, 2, 3, 4, 5]
+
+✅ Done — fully sorted!
+
+
+
+🔹 Algorithm (Logic)
+For each element (starting from index 1):
+
+01. Take it as the key.
+02. Compare it with all elements before it.
+03. Move all larger elements one position right.
+04. Insert the key at its correct position
+
+

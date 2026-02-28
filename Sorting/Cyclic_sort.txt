@@ -1,0 +1,68 @@
+
+Cyclic Sort
+------------------
+
+⚙️ What is Cyclic Sort?
+Cyclic Sort is a sorting algorithm used when:
+
+The numbers are in a known range, usually 1 to n.
+The array may be unsorted, but all numbers are unique (or sometimes have small duplicates).
+
+It’s not a general-purpose sorting algorithm like bubble sort or merge sort —
+it’s a pattern used to solve specific problems efficiently (in O(n) time).
+
+
+🧩 Example
+Say you have:
+arr = [3, 1, 5, 4, 2]
+
+Numbers are from 1 to 5.
+
+The correct position of each number = (number - 1)
+
+01. 1 → index 0
+02. 2 → index 1
+03. 3 → index 2
+04. 4 → index 3
+05. 5 → index 4
+
+Now we just need to place each number in its correct position.
+
+🧠 Algorithm Intuition
+We go through the array index by index:
+
+01. Check if the current number is in the correct position.
+02. If yes → move to the next index.
+03. If not → swap it with the number at its correct position.
+04. Repeat until all numbers are in place.
+
+💻 Example Step-by-Step
+Start: [3, 1, 5, 4, 2]
+
+♦️i = 0 → value = 3 → correct index = 2
+→ swap index 0 and 2
+→ [5, 1, 3, 4, 2]
+
+♦️i = 0 → value = 5 → correct index = 4
+→ swap index 0 and 4
+→ [2, 1, 3, 4, 5]
+
+♦️i = 0 → value = 2 → correct index = 1
+→ swap index 0 and 1
+→ [1, 2, 3, 4, 5]
+
+
+🚀 Time and Space Complexity
+
+01. Time: O(n) — because each number is swapped at most once.
+02. Space: O(1) — it’s done in-place (no extra array).
+
+
+
+| Problem                   | What to Find                          |
+| ------------------------- | ------------------------------------- |
+| Missing Number            | Find which number is missing from 0–n |
+| Find All Missing Numbers  | Find all missing numbers in 1–n       |
+| Find the Duplicate Number | Detect duplicate without extra space  |
+| Set Mismatch              | One number missing and one duplicate  |
+

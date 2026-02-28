@@ -1,0 +1,56 @@
+🔹 What is Selection Sort?
+
+Selection Sort works by repeatedly selecting the smallest element (for ascending order) from the unsorted part of the array and placing it at the beginning.
+
+It divides the array into two parts:
+
+01. A sorted part (on the left)
+02. An unsorted part (on the right)
+
+
+➡️MY OPINION:
+It's just Assuming the first element as the smallest one and then comparing it with others if something is smaller than that the position will be swapped.
+Then Do it with the rest of the Array.
+
+
+
+🔹 Step-by-Step Process:
+
+Suppose:
+arr = [3, 1, 5, 4, 2]
+
+Pass 1:
+Smallest element in [3, 1, 5, 4, 2] is 1.
+Swap 1 with first element (3).
+→ [1, 3, 5, 4, 2]
+
+
+Pass 2:
+Find smallest in remaining [3, 5, 4, 2] → 2
+Swap 2 with 3
+→ [1, 2, 5, 4, 3]
+
+
+Pass 3:
+Find smallest in [5, 4, 3] → 3
+Swap 3 with 5
+→ [1, 2, 3, 4, 5]
+
+
+Pass 4:
+Find smallest in [4, 5] → already sorted
+
+
+✅ Final sorted array: [1, 2, 3, 4, 5]
+
+
+
+🔹 Pseudocode:
+for i = 0 to n-2:
+    min_index = i
+    for j = i+1 to n-1:
+        if arr[j] < arr[min_index]:
+            min_index = j
+    swap(arr[i], arr[min_index])
+
+

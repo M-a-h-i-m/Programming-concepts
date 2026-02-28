@@ -1,0 +1,51 @@
+Bubble Sort is one of the simplest sorting algorithms in computer science. It works by repeatedly comparing adjacent elements in a list (or array) and swapping them if they are in the wrong order.
+
+This process continues until the list is completely sorted.
+
+🔹 How Bubble Sort Works:
+01. Start at the beginning of the list.
+02. Compare the first two elements.
+03. If the first is greater than the second → swap them.
+04. Move to the next pair and repeat until you reach the end.
+05. After the first pass, the largest element will be at the end of the 
+    list.
+06. Repeat the process for the remaining (unsorted) elements.
+07. Continue until no swaps are needed — the list is now sorted
+
+
+
+🔹 Example:
+
+Suppose we have this list:
+[5, 3, 8, 4, 2]
+
+Pass 1:
+
+01. Compare 5 and 3 → swap → [3, 5, 8, 4, 2]
+02. Compare 5 and 8 → no swap
+03. Compare 8 and 4 → swap → [3, 5, 4, 8, 2]
+04. Compare 8 and 2 → swap → [3, 5, 4, 2, 8]
+→Largest element (8) “bubbles” to the end.3
+
+Pass 2
+[3, 5, 4, 2, 8] → [3, 4, 2, 5, 8] → [3, 2, 4, 5, 8] → [2, 3, 4, 5, 8]
+
+Now the array is sorted.
+
+🔹 Pseudocode:
+for i = 0 to n-1
+    for j = 0 to n-i-2
+        if arr[j] > arr[j+1]
+            swap(arr[j], arr[j+1])
+
+
+🔹 Time Complexity:
+01. Best case: O(n) — when the list is already sorted
+02. Average and Worst case: O(n²) — because of nested loops
+
+
+🔹 Space Complexity:
+O(1) — in-place sorting (no extra memory used)
+
+🔹 Key Idea:
+In Bubble Sort, large values "bubble up" to the end, while smaller values gradually "sink" to the beginning.
