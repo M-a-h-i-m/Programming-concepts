@@ -1,0 +1,14 @@
+A linear search is the simplest searching method used to find a specific item in a list. It checks each element one by one from the beginning until it finds the target—or reaches the end.
+
+🔍 Example
+
+List: [4, 7, 9, 2, 5]
+Target: 2
+
+Steps:
+
+♦️Check 4 → not 2
+♦️Check 7 → not 2
+♦️Check 9 → not 2
+♦️Check 2 → ✔ found!
+
