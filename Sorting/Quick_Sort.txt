@@ -27,11 +27,15 @@ Recursively sort right → [3, 7, 8, 10]
 
 Combine → [0, 1, 2, 3, 7, 8, 10]
 
-🧠 Algorithm Intuition:
-01. Pick a pivot (last element or random).
-02. Partition array into two parts: ≤ pivot, > pivot.
-03. Recursively sort left and right partitions.
-04. Combine the results.
+🧠 ⚙️ Quick Sort Algorithm (Step-by-Step):
+
+01. Start with an unsorted array.
+02. Choose a pivot element (commonly the last element of the array).
+03. Partition the array:
+    • Move all elements smaller than the pivot to its left.
+    • Move all elements greater than the pivot to its right.
+04. Recursively apply the same process to the left and right subarrays.
+05. Combine results — once recursion completes, the array is sorted.
 
 
 💻 Example Step-by-Step
